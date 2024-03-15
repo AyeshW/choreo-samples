@@ -9,7 +9,7 @@ github:ListenerConfig config = {
     "secret": gitWebhookSecret
 };
 
-listener http:Listener httpListener = new (9090);
+listener http:Listener httpListener = new (9093);
 listener github:Listener webhookListener = new (config, httpListener);
 
 service github:IssuesService on webhookListener {
