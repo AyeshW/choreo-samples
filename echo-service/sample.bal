@@ -12,4 +12,8 @@ service / on new http:Listener(8090) {
     resource function post echo/world (@http:Payload string textMsg) returns string {
         return "World " + textMsg;
     }
+
+    resource function post abc/qwe (@http:Payload string textMsg) returns string {
+        return "AbcQWE " + textMsg;
+    }
 }
